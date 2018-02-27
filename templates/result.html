@@ -1,0 +1,21 @@
+<!--
+Ibnul Jahan and Jawadul Kadir
+SoftDev2 pd7
+K06 -- Ay Mon, Go Git It From Yer Flask
+2018-2-26
+-->
+
+<!DOCTYPE html>
+<html>
+	<center>
+		<h1>Results</h1>
+		{% for match in matches %}
+		<img src="{{match['images']['fixed_width']['url']}}">
+		{% endfor %}
+		<br>
+		<br>
+		<form action="/">
+			<input type="submit" value="GO BACK!"></input>
+		</form>
+	</center>
+</html>
